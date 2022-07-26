@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import TimeConversion from '../views/TimeConversion.vue'
 
 const routes = [
   {
@@ -15,7 +16,7 @@ const routes = [
   {
     path: "/time",
     name: "time",
-    component: () => import("../views/TimeConversion.vue")
+    component: TimeConversion
   }
 ]
 

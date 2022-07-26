@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: 'https://my-json-server.typicode.com/queturotre/carmedi',
+  baseURL: 'https://my-json-server.typicode.com/queturotre/cremedi',
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -11,6 +11,6 @@ const apiClient = axios.create({
 
 export default {
   getCredits() {
-    return apiClient.get('/data')
+    return apiClient.get('/credits')
   },
 }
