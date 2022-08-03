@@ -85,7 +85,7 @@ export default {
     })
     const rules = computed(() => {
       return{
-        moneyRequested: { required, maxValue: maxValue(1700000), minValue: minValue(800000) },
+        moneyRequested: { required, maxValue: maxValue(1700000), minValue: minValue(500000) },
         termRequested: { required, maxValue: maxValue(48), minValue: minValue(12) }
       }
     })
