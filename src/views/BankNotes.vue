@@ -7,7 +7,14 @@
     <h2>Output</h2>
     <p>Print the read number and the minimum quantity of each necessary banknotes, as the given example. Do not forget to print the end of line after each line, otherwise you will receive “Presentation Error”.</p>
     <h3>Development</h3>
-    <input type="number" id="plata" placeholder="Quantity" v-model="dinero" class="input"><br><button @click="calcular" class="btn btn-primary">Submit</button><br>
+    <input 
+      type="number" 
+      id="plata" 
+      placeholder="Quantity" 
+      v-model="dinero" 
+      class="input"
+      @keyup.enter="calcular()"  
+    ><br><button @click="calcular" class="btn btn-primary">Submit</button><br>
 
     <div class="resultado" v-if="show">
       <p>Para ${{ plata.value }}, se necesitan</p>
